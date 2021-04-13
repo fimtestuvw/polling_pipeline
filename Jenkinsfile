@@ -4,15 +4,10 @@ pipeline{
     cron ('H/1 * * * *')
   }
   stages {
-    stage('Test')
-    {
-      echo 'Testing'
+    stage('Test'){
+      steps{
+        echo 'Testing'
+      }
     }
-    
-  
-  
   }
-
-
-
 }
